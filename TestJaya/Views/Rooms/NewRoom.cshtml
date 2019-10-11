@@ -1,0 +1,18 @@
+﻿@model TestJaya.Data.DTO.RoomDto;
+
+
+<form id="frmRoom" asp-controller="Rooms" asp-action="New" method="post">
+    <div class="new-room-container">
+        <div class="new-room-name">
+            Nombre: <input asp-for="Name"/>
+            <span asp-validation-for="Name" class="error-span"></span>
+        </div>
+        <div class="new-room-description">
+            Descripción: <input asp-for="Description" />
+            <span asp-validation-for="Description" class="error-span"></span>
+        </div>
+        <div class="new-room-button">
+            <input type="submit" value="Crear sala" />
+        </div>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+﻿
+<input type="button" value="Crear Sala" onclick="location.href='@Url.Action("New", "Rooms")'" class="room-list-create-room-button"/>
+<div class="room-list-container">   
+    @foreach (var room in ViewData.Model) {
+        <div class="room-list-element" onclick="location.href='@Url.Action("Index", "Chat", new { id = @room.Id } )'">
+            <div class="room-list-name">
+                @room.Name
+            </div>
+            <div class="room-list-description">
+                @room.Description
+            </div>
+        </div>
+    } 
+</div>

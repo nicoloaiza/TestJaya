@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form action="@Url.Action("Index")" method="post">
+    <input type="text" placeholder="Ingrese su nombre de usuario" name="userName" />
+    <input type="submit" value="Entrar" />
+</form>
